@@ -11,10 +11,13 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css">
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/carousel/OwlCarousel2-develop/OwlCarousel2-develop/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/carousel/OwlCarousel2-develop/OwlCarousel2-develop/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/carousel/OwlCarousel2-develop/OwlCarousel2-develop/dist/assets/owl.theme.green.min.css">
+    <script  src="assets/carousel/OwlCarousel2-develop/OwlCarousel2-develop/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="assets/carousel/OwlCarousel2-develop/OwlCarousel2-develop/dist/owl.carousel.min.js"></script>
+    <script src="assets/carousel/runOwl.js"></script>
+
     <link rel="stylesheet" href="font/newFont.css">
     <link rel="stylesheet" href="style/homeStyle.css">
 </head>
@@ -58,9 +61,6 @@
         <div class="header-information">
             <section class="container">
                 <div class="row justify-content-between my-5">
-                    <div class="main-img col-6">
-                        <img src="assets/img/header/header-main.svg" alt="blog-img">
-                    </div>
                     <div class="main-info col-5 my-5">
                         <div class="main-info-title">
                             <h2>وبلاگ خود را با آدیرا بسازید</h2>
@@ -75,9 +75,92 @@
                             <a href="" class="btn" aria-colcount="page">تماس با ما</a>
                         </div>
                     </div>
+                    <div class="main-img col-6">
+                        <img src="assets/img/header/header-main.svg" alt="blog-img">
+                    </div>
                 </div>    
             </section>
         </div>
     </header>
+    <section>
+        <section class="services container mt-4">
+            <section class="row">
+                <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="bi bi-x-diamond"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="bi bi-journal-medical"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="clients owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-1.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-2.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-3.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-4.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-5.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-6.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-7.png" alt="شرکت همکار">
+                    </div>
+                    <div class="owl-item col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-8.png" alt="شرکت همکار">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 </body>
 </html>

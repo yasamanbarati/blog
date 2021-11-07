@@ -1,5 +1,5 @@
 :root{
-    --first-color: #083b66;
+    --first-color: #0a2d46;
     --scound-color: #8dcaff;
     --third-color: #e8f8e0;
 }
@@ -8,7 +8,7 @@ body{
 }
 header {
     background-color: var(--third-color);
-    border-radius: 0px 0px 0px 300px;
+    border-radius: 0px 0px 48% 0px;
 }
 .navbar-brand a,
 .navbar-brand{
@@ -38,7 +38,6 @@ div#navbarContent {
     color: var(--first-color);
     font-size: 16px;
     font-weight: 700;
-    width: 100%;
 }
 .navbar-nav.buttons .nav-item{
     border-radius: 10px;
@@ -75,10 +74,10 @@ div#navbarContent {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 30px;
+    top: 63px;
     right: 0;
-    height: 0.7px;
-    border-radius: 4px;
+    height: 1.8px;
+    border-radius: 8px;
     background-color: var(--scound-color);
 }
 .header-information .main-img img{
@@ -87,4 +86,84 @@ div#navbarContent {
 }
 .header-information{
     height: 500px;
+}
+.main-info-title{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 38px;
+    color: var(--first-color);
+}
+.main-info-text {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--first-color);
+    margin-top: 25px;
+}
+.main-info-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-info-link a{
+    width: 120px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 11px;
+    margin: 25px 0px;
+}
+.main-info-link a:first-child{
+    background-color: var(--first-color);
+    border: 1px var(--first-color) solid;
+    color: var(--third-color);
+    margin-left: 25px;
+}
+.main-info-link a:last-child{
+    background-color: var(--third-color);
+    color: var(--first-color);
+    border-radius: 10px;
+    border: 1.6px var(--first-color) solid;
+}
+/* services */
+.services div .card{
+    box-shadow: 1px 0px 5px -1px var(--scound-color);
+}
+.card-header{
+    background-color: transparent;
+    border-bottom: 0px;
+}
+.card-header i{
+    font-size: 50px;
+    color: var(--scound-color);
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--first-color);
+    margin-bottom: 20px;
+}
+.card-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--first-color);
+}
+/*  clients*/
+.clients{
+    margin-top: 20px;
+}
+.owl-carousel .owl-item{
+    width: 130px;
+    height: 45px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 130px;
+    height: 50px;
+}
+.owl-stage {
+    transform: translate3d(-7px, 0px, 0px);
 }
