@@ -1,0 +1,90 @@
+:root{
+    --first-color: #083b66;
+    --scound-color: #8dcaff;
+    --third-color: #e8f8e0;
+}
+body{
+    direction: rtl;
+}
+header {
+    background-color: var(--third-color);
+    border-radius: 0px 0px 0px 300px;
+}
+.navbar-brand a,
+.navbar-brand{
+    width: 180px;
+    height: 80px;
+}
+.navbar-brand a img{
+    width: 100%;
+    height: 100%;
+}
+div#navbarContent {
+    height: 80px;
+}
+.header-navbar{
+    border-bottom: 1.5px var(--first-color) solid;
+}
+.navbar-nav.links .nav-item{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-expand .navbar-nav .nav-link,
+.navbar-nav.buttons .nav-item a{
+    padding: 0px;
+    color: var(--first-color);
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+.navbar-nav.buttons .nav-item{
+    border-radius: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav.buttons .nav-item a{
+    padding-bottom: 5px;
+}
+.navbar-nav.buttons .nav-item:first-child{
+    border: 1.7px var(--first-color) solid;
+}
+.navbar-nav.buttons .nav-item:last-child{
+    background-color: var(--first-color);
+    border: 1.5px var(--first-color) solid;
+}
+.navbar-nav.buttons .nav-item:last-child a{
+    color: var(--scound-color);
+}
+.navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-nav .nav-item a::after{
+    transition: 0.7s ease;
+    content: "";
+    width: 0;
+}
+.navbar-nav .nav-item:hover a::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    right: 0;
+    height: 0.7px;
+    border-radius: 4px;
+    background-color: var(--scound-color);
+}
+.header-information .main-img img{
+    width: 100%;
+    height: 100%;
+}
+.header-information{
+    height: 500px;
+}
