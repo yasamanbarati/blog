@@ -1,9 +1,4 @@
-:root{
-    --first-color: #0a2d46;
-    --scound-color: #8dcaff;
-    --third-color: #e8f8e0;
-    --fourth-color: #cbdbea8a;
-}
+ 
 body{
     direction: rtl;
 }
@@ -77,7 +72,7 @@ div#navbarContent {
 }
 #home:before {
     content: "";
-    background: rgb(255 255 255 / 69%);
+    background: rgb(255 255 255 / 76%);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -88,7 +83,7 @@ div#navbarContent {
 #home img{
     position: absolute;
     width: 100%;
-    top: -54%;
+    top: -41%;
 }
 #home div.container{
     z-index: 2;
@@ -127,23 +122,20 @@ div#navbarContent {
     transition: 0.3s;
 }
 /* personal information */
-#person{
-    /* padding: 0px 70px; */
-}
 .person-info-img {
-    width: 500px;
-    height: 500px;
-    margin: 0px 50px;
+    margin: 0px 0px 0px 50px;
 }
 .person-info-img img{
     width: 100%;
     height: 100%;
 }
 .box-title{
-    display: inline-block;
+    width: 170px;
+    margin: 30px auto 70px auto;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px 43%;
 }
 .box-title h3 {
     font-weight: 700;
@@ -154,6 +146,48 @@ div#navbarContent {
     align-items: center;
     margin: 0 auto;
 }
+.box-title::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--scound-color);
+    top: 48px;
+    right: 0;
+    position: absolute;
+}
+.box-title::before{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: var(--first-color);
+    top: 48px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    right: 48px;
+}
+.person-info-title{
+    display: grid;
+}
+.person-info-title h4,
+.person-info-title p{
+    display: inline-block;
+    color: var(--first-color);
+}
+.person-info-title h4{
+    width: 170px;
+    white-space: nowrap;
+    font-weight: 800;
+    font-size: 25px;
+}
+.person-info-title p{
+    width: 650px;
+    white-space: nowrap;
+    overflow: auto;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--first-color);
+}
 .detail-list1 ul li,
 .detail-list2 ul li{
     display: flex;
@@ -163,9 +197,37 @@ div#navbarContent {
     font-weight: 600;
     color: var(--first-color);
     margin: 30px 0px;
+    position: relative;
+}
+.detail-list1 ul li::before, .detail-list2 ul li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--scound-color);
+    position: absolute;
+    top: 20%;
+    right: -30px;
+    border-right-style: inset;
+    border-radius: 10px;3
 }
 .detail-list1 ul li p:first-child,
 .detail-list2 ul li p:first-child{
     font-size: 18px;
     font-weight: 700;
+}
+.phoneNamber,
+.personEmail{
+    direction: ltr;
+}
+/* skills */
+.skills-box ul li .progress div:first-child{
+    background-color: var(--scound-color);
+}
+.skills-box ul li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.skills-box ul li .progress p{
+    font-size: 14px;
+    margin: 0px;
 }
