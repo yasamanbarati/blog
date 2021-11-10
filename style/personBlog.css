@@ -1,5 +1,11 @@
- 
-body{
+:root{
+    --first-color: #0a2d46;
+    --scound-color: #8dcaff;
+    --third-color: #e8f8e0;
+    --fourth-color: #cbdbea8a;
+    --fifth-color : #ebf8e4f3;
+}
+ body{
     direction: rtl;
 }
 header{
