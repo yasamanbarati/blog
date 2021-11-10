@@ -1,0 +1,91 @@
+.form-box{
+    position: relative;
+}
+form{
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 95px;
+    right: 14%;
+    z-index: 1;
+    border-radius: 15px;
+    background: #e8f8e0;
+}
+.form-group{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;
+}
+form h3{
+    color: #0a2d46;
+    text-align: center;
+    padding: 15px;
+    font-weight: 800;
+}
+form label{
+    font-size: 16px;
+    font-weight: 800;
+}
+.form-control{
+    background: #ebf8e4f3;
+    font-size: 12px;
+    font-weight: 600;
+}
+.form-check-label{
+    color: #0a2d46;
+}
+.btn-link{
+    background: #0a2d46;
+    color: #ebf8e4f3;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 42%;    ;
+    font-size: 16px;
+    font-weight: 600;
+}
+.img-box{
+    position: absolute;
+    top: 60px;
+    right: 48%;
+}
+.img-form{
+    width: 100%;
+    height: 100%;
+}
+.slider{
+    margin-bottom: 20px;
+    position: relative;
+}
+.slider .owl-item.active.center .slider-card{
+    transform: scale(1.15);
+    opacity: 1;
+}
+.slider-card{
+    background: #fff;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px(206, 191, 191, 0.493);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.slider-card img{
+    border-radius: 5px 5px 0 0;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    top: calc(50%- 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px;
+    z-index: 1;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    top: calc(50%- 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px;
+    z-index: 1;
+}
