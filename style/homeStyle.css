@@ -2,6 +2,8 @@
     --first-color: #0a2d46;
     --scound-color: #8dcaff;
     --third-color: #e8f8e0;
+    --fourth-color: #cbdbea8a;
+    --fifth-color : #ebf8e4f3;
 }
 body{
     direction: rtl;
@@ -62,12 +64,12 @@ div#navbarContent {
 .navbar-nav .nav-item{
     position: relative;
 }
-.navbar-nav .nav-item a::after{
+.navbar-nav.links .nav-item a::after{
     transition: 0.7s ease;
     content: "";
     width: 0;
 }
-.navbar-nav .nav-item:hover a::after {
+.navbar-nav.links .nav-item:hover a::after {
     position: absolute;
     content: "";
     width: 90%;
@@ -80,6 +82,27 @@ div#navbarContent {
     border-radius: 8px;
     background-color: var(--scound-color);
 }
+/* فرم ورود modal  */
+section.modal-content{
+    background-color: var(--fifth-color);
+}
+.social-links a i{
+    font-size: 28px;
+    color: var(--fifth-color);
+    background-color: var(--first-color);
+    border-radius: 47%;
+
+}
+.modal-header,
+.modal-footer{
+    border-top: 1px var(--first-color) solid;
+    border-bottom: 1px var(--first-color) solid;
+}
+.modal-header h3,
+.modal-body form input,
+.modal-body form label{
+    color: var(--first-color);
+} 
 .header-information .main-img img{
     width: 100%;
     height: 100%;
@@ -166,4 +189,9 @@ div#navbarContent {
 }
 .owl-stage {
     transform: translate3d(-7px, 0px, 0px);
+}
+/* footer */
+footer{
+    background-color: var(--fifth-color);
+    border-radius: 55% 55% 0px 0px;
 }

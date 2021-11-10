@@ -237,3 +237,49 @@ div#navbarContent {
     font-size: 14px;
     margin: 0px;
 }
+/* about  */
+.about-box-info-title h3{
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--first-color);
+}
+.about-box-info-item{
+    position: relative;
+}
+.about-box-info-item::before{
+    position: absolute;
+    content: "";
+    border-right: 2px var(--scound-color) solid;
+    width: 2px;
+    height: 100%;
+    top: 6px;
+    right: -21px;
+}
+.about-box-info-item h4{
+    font-size: 25px;
+    font-weight: 800;
+    color: #8dcaff;
+    position: relative;
+}
+.about-box-info-item h4::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px var(--scound-color) solid;
+    border-radius: 50%;
+    top: 6px;
+    right: -30px;
+}
+.about-box-info-item p,
+.about-box-info-item ul{
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;    
+}
+
+/* footer */
+footer{
+    background-color: var(--fifth-color);
+}
