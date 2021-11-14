@@ -1,16 +1,15 @@
 :root{
     --first-color: #0a2d46;
-    --scound-color: #8dcaff;
-    --third-color: #e8f8e0;
-    --fourth-color: #cbdbea8a;
-    --fifth-color : #ebf8e4f3;
+    --scound-color: #f9f9f9;
+    --third-color: #fff16ee0;
+    --fourth-color: #1b037b;
+    --fifth-color : ;
 }
 body{
     direction: rtl;
 }
-header {
-    background-color: var(--third-color);
-    border-radius: 0px 0px 48% 0px;
+header{
+    position: relative;
 }
 .navbar-brand a,
 .navbar-brand{
@@ -24,9 +23,6 @@ header {
 div#navbarContent {
     height: 80px;
 }
-.header-navbar{
-    border-bottom: 1.5px var(--first-color) solid;
-}
 .navbar-nav.links .nav-item{
     width: 100px;
     height: 80px;
@@ -37,7 +33,7 @@ div#navbarContent {
 .navbar-expand .navbar-nav .nav-link,
 .navbar-nav.buttons .nav-item a{
     padding: 0px;
-    color: var(--first-color);
+    color: var(--scound-color);
     font-size: 16px;
     font-weight: 700;
 }
@@ -52,14 +48,14 @@ div#navbarContent {
     padding-bottom: 5px;
 }
 .navbar-nav.buttons .nav-item:first-child{
-    border: 1.7px var(--first-color) solid;
+    border: 1.7px var(--third-color) solid;
 }
 .navbar-nav.buttons .nav-item:last-child{
-    background-color: var(--first-color);
-    border: 1.5px var(--first-color) solid;
+    background-color: var(--third-color);
+    border: 1.5px var(--third-color) solid;
 }
 .navbar-nav.buttons .nav-item:last-child a{
-    color: var(--scound-color);
+    color: var(--first-color);
 }
 .navbar-nav .nav-item{
     position: relative;
@@ -82,45 +78,33 @@ div#navbarContent {
     border-radius: 8px;
     background-color: var(--scound-color);
 }
-/* فرم ورود modal  */
-section.modal-content{
-    background-color: var(--fifth-color);
-}
-.social-links a i{
-    font-size: 28px;
-    color: var(--fifth-color);
-    background-color: var(--first-color);
-    border-radius: 47%;
-
-}
-.modal-header,
-.modal-footer{
-    border-top: 1px var(--first-color) solid;
-    border-bottom: 1px var(--first-color) solid;
-}
-.modal-header h3,
-.modal-body form input,
-.modal-body form label{
-    color: var(--first-color);
-} 
-.header-information .main-img img{
+.header-background{
+    position: absolute;
     width: 100%;
-    height: 100%;
+}
+.header-background img{
+    width: 100%;
+    height: auto;
 }
 .header-information{
-    height: 500px;
+    height: 280px;
+}
+.main-info{
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
 }
 .main-info-title{
     display: inline-block;
     font-weight: 900;
     font-size: 38px;
-    color: var(--first-color);
+    color: var(--scound-color);
 }
 .main-info-text {
     display: inline-block;
     font-weight: 500;
     font-size: 15px;
-    color: var(--first-color);
+    color: var(--scound-color);
     margin-top: 25px;
 }
 .main-info-link {
@@ -132,7 +116,7 @@ section.modal-content{
     width: 120px;
     border-radius: 10px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,20 +124,25 @@ section.modal-content{
     margin: 25px 0px;
 }
 .main-info-link a:first-child{
-    background-color: var(--first-color);
-    border: 1px var(--first-color) solid;
-    color: var(--third-color);
+    border: 1px var(--third-color) solid;
+    color: var(--scound-color);
     margin-left: 25px;
 }
 .main-info-link a:last-child{
     background-color: var(--third-color);
     color: var(--first-color);
     border-radius: 10px;
-    border: 1.6px var(--first-color) solid;
+    border: 1.6px var(--third-color) solid;
 }
 /* services */
 .services div .card{
     box-shadow: 1px 0px 5px -1px var(--scound-color);
+    background-color: var(--scound-color);
+    transition: 0.6 ease;
+}
+.services div .card:hover{
+    background-color: var(--third-color);
+    z-index: 100;
 }
 .card-header{
     background-color: transparent;
@@ -161,7 +150,7 @@ section.modal-content{
 }
 .card-header i{
     font-size: 50px;
-    color: var(--scound-color);
+    color: var(--first-color);
 }
 .card-title {
     font-size: 20px;
@@ -174,24 +163,55 @@ section.modal-content{
     font-size: 14px;
     color: var(--first-color);
 }
-/*  clients*/
-.clients{
-    margin-top: 20px;
+/* about box */
+.about-page{
+    background-color: var(--scound-color);
 }
-.owl-carousel .owl-item{
-    width: 130px;
+
+.about-page .container .row{
+    padding: 15px;
+}
+.about-title h3{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--first-color);
+}
+.about-title p{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--first-color); 
+    margin: 25px 0px; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+.about-link a{
+    width: 150px;
     height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px;
 }
-.owl-carousel .owl-item img {
-    display: block;
-    width: 130px;
-    height: 50px;
+.about-link a:first-child{
+    color: var(--first-color);
+    border: 2px var(--fourth-color) solid;
+    border-radius: 10px;
 }
-.owl-stage {
-    transform: translate3d(-7px, 0px, 0px);
+.about-link a:last-child{
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+    border-radius: 10px;
 }
-/* footer */
+/* footer box */
 footer{
-    background-color: var(--fifth-color);
+    background-color: var(--fourth-color);
     border-radius: 55% 55% 0px 0px;
 }
