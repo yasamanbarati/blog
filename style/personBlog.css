@@ -1,12 +1,13 @@
 :root{
     --first-color: #0a2d46;
-    --scound-color: #8dcaff;
-    --third-color: #e8f8e0;
-    --fourth-color: #cbdbea8a;
-    --fifth-color : #ebf8e4f3;
+    --scound-color: #f9f9f9;
+    --third-color: #fff16ee0;
+    --fourth-color: #1b037b;
+    --fifth-color : #d4e7f4;
 }
  body{
     direction: rtl;
+    background-color: var(--scound-color);
 }
 header{
     position: fixed;
@@ -40,7 +41,7 @@ div#navbarContent {
 .nav-item{
     transition: 0.8s ease-in-out;
     border-radius: 50px;
-    background-color: var(--fourth-color);
+    background-color: var(--fifth-color);
     padding: 5px 9px;
     margin-bottom: 10px;
     position: relative;
@@ -78,7 +79,6 @@ div#navbarContent {
 }
 #home:before {
     content: "";
-    background: rgb(255 255 255 / 76%);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -86,10 +86,11 @@ div#navbarContent {
     right: 0;
     z-index: 1;
 }
-#home img{
+#home img{    
     position: absolute;
-    width: 100%;
-    top: -41%;
+    width: 65%;
+    top: 0;
+    left: 0;
 }
 #home div.container{
     z-index: 2;
