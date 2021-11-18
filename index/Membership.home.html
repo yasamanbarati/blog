@@ -60,7 +60,7 @@
         </div>
     </header>
 
-    <div class="mt-5">
+    <div class="mt-5 mb-5">
         <div class="container">
             <div class="box-title">
                 <h1>اطلاعات عضویت</h1>
@@ -89,7 +89,8 @@
                 </div>
                 <div class="box-info">
                     <div class="box-info-inner">
-                        <div class="box-info-title">
+                        <div class="box-info-title d-flex">
+                            <i class="bi bi-person"></i>
                             <h4>مشخصات فردی</h4>
                         </div>
                         <div class="box-info-value">
@@ -186,6 +187,11 @@
                                                 </datalist>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" value="ذخیره" id="reserve">
+                                            </td>
+                                        </tr>
                                     </table>
 
 
@@ -194,10 +200,23 @@
 
                     </div>
                     </div>
+                    <div class="box-info-phone mt-3">
+                        <div class="box-info-phone-title d-flex align-items-baseline">
+                            <i class="bi bi-telephone"></i>
+                            <h4>شماره موبایل</h4>
+                        </div>
+                        <div class="box-info-phone-item p-3">
+                            <label for="phoneNumber">شماره موبایل</label><br>
+                            <input type="tel" name="phoneNumber" id="phoneNumber">
+
+                            <br><br>
+                            <input type="submit" value="ارسال کد تایید" id="sendCode">
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
-
+    </div>
 <!-- footer -->
     <footer>
         <section class="container">
