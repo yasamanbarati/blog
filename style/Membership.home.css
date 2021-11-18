@@ -1,0 +1,205 @@
+:root{
+    --first-color: #0a2d46;
+    --scound-color: #f9f9f9;
+    --third-color: #fff16ee0;
+    --fourth-color: #1b037b;
+    --fifth-color : ;
+}
+body{
+    direction: rtl;
+}
+.header-navbar{
+    position: relative;
+}
+.navbar-brand a,
+.navbar-brand{
+    width: 180px;
+    height: 80px;
+}
+.navbar-brand a img{
+    width: 100%;
+    height: 100%;
+}
+div#navbarContent {
+    height: 80px;
+}
+.navbar-nav.links .nav-item{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-expand .navbar-nav .nav-link,
+.navbar-nav.buttons .nav-item a{
+    padding: 0px;
+    color: var(--scound-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+.navbar-nav.buttons .nav-item{
+    border-radius: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav.buttons .nav-item a{
+    padding-bottom: 5px;
+}
+.navbar-nav.buttons .nav-item:first-child{
+    border: 1.7px var(--third-color) solid;
+}
+.navbar-nav.buttons .nav-item:last-child{
+    background-color: var(--third-color);
+    border: 1.5px var(--third-color) solid;
+}
+.navbar-nav.buttons .nav-item:last-child a{
+    color: var(--first-color);
+}
+.navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-nav.links .nav-item a::after{
+    transition: 0.7s ease;
+    content: "";
+    width: 0;
+}
+.navbar-nav.links .nav-item:hover a::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 63px;
+    right: 0;
+    height: 1.8px;
+    border-radius: 8px;
+    background-color: var(--scound-color);
+}
+.header-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.header-background img{
+    width: 100%;
+    height: 100%;
+}
+.box-info .box-info-inner{
+    border: 1px var(--scound-color) solid;
+    margin: 0px 20px;
+    box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 17%);
+}
+.box-info-title h4{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px;
+}
+.box-title h1{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--first-color);
+}
+.box-topic-link{
+    margin-top: 15px;
+    padding: 10px;
+}
+.box-topic-link:nth-child(01){
+    background-color: var(--scound-color);
+    box-shadow: 0px 0px 3px 1px rgb(0 0 0 / 17%);
+    margin-top: 0px;
+}
+.box-topic-link a{
+    font-size: 15px;
+    color: var(--first-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+.box-topic-link i.bi,
+.box-topic-link svg{
+    font-size: 20px;
+    color: var(--first-color);
+    font-weight: 800;
+    margin-right: 30px;
+}
+.personal-image img{
+    width: 100%;
+    height: 100%;
+}
+.personal-image{
+    width: 15%;
+    height: 15%;
+    margin-left: 20px;
+}
+.personal-image-file label,
+.personal-image-file input{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--first-color);
+}
+form table tr td{
+    width: 100%;
+}
+form table tr td label{
+    color: var(--first-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+form table tr td input{
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px black solid;
+    padding: 10px;
+    color: var(--first-color);
+    margin: 10px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 95%;
+}
+form table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input#title {
+    width: 97.5%;
+}
+/* footer box */
+footer{
+    background-color: var(--first-color);
+}
+.social-links a i{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--scound-color);
+}
+.footer-info-item1 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: var(--scound-color);
+}
+.footer-info-item1 p,
+.footer-info-item2 ul li a,
+.footer-info-item2 ul li{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--scound-color);
+    list-style-type: none;
+    text-decoration: none;
+}
+.footer-info-item1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-bottom: 2px var(--first-color) solid;
+}
+.footer-info-item2{
+    border-top: 2px var(--first-color) solid;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
