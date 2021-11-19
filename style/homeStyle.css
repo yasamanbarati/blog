@@ -167,7 +167,10 @@ div#navbarContent {
 .about-page{
     background-color: var(--scound-color);
 }
-
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
 .about-page .container .row{
     padding: 15px;
 }
@@ -218,6 +221,10 @@ footer{
     font-size: 20px;
     font-weight: 900;
     color: var(--scound-color);
+}
+.social-links a i:hover,
+.footer-info-links li a:hover{
+    color: var(--third-color);
 }
 .footer-info-item1 h2{
     display: flex;
