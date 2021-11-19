@@ -39,13 +39,13 @@ div#navbarContent {
     right: 15px;
 }
 .nav-item{
-    transition: 0.8s ease-in-out;
     border-radius: 50px;
     background-color: var(--fifth-color);
     padding: 5px 9px;
     margin-bottom: 10px;
     position: relative;
     white-space: nowrap;
+    width: fit-content;
 }
 .nav-link i{
     display: flex;
@@ -57,19 +57,24 @@ div#navbarContent {
     overflow: hidden;
 }
 .nav-link span{
-    display: none;
-    transition: 0.7 ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    transition: 0.3s ease;
 }
 .nav-item a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-.nav-item:hover .nav-link span{
+.nav-item:hover span{
     display: block;
     justify-content: center;
     align-items: center;
     margin-right: 5px;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 /* Home */
 #home{
