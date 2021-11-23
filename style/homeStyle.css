@@ -84,7 +84,7 @@ div#navbarContent {
 }
 .header-background img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .header-information{
     height: 280px;
@@ -94,7 +94,7 @@ div#navbarContent {
     position: absolute;
     margin: 0 auto;
 }
-.main-info-title{
+.main-info-title h2{
     display: inline-block;
     font-weight: 900;
     font-size: 38px;
@@ -135,6 +135,9 @@ div#navbarContent {
     border: 1.6px var(--third-color) solid;
 }
 /* services */
+.services{
+    margin-top: 1.5rem;
+}
 .services div .card{
     box-shadow: 1px 0px 5px -1px var(--scound-color);
     background-color: var(--scound-color);
@@ -164,6 +167,9 @@ div#navbarContent {
     color: var(--first-color);
 }
 /* about box */
+.about-link{
+    justify-content: flex-end;
+}
 .about-page{
     background-color: var(--scound-color);
 }
