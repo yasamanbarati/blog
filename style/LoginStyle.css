@@ -44,7 +44,8 @@ body{
 .social-links{
     position: absolute;
     bottom: 6px;
-    right: 114px;
+    right: 0;
+    left: 0;
 }
 .social-links a{
     color: var(--first-color);
@@ -52,7 +53,7 @@ body{
     font-weight: 900;
 }
 .form-group input{
-    width: 300px;
+    width: 100%;
     padding: 8px;
     background-color: var(--first-color);
     font-size: 14px;

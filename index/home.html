@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css">
+    <script src="../assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../font/newFont.css">
     <link rel="stylesheet" href="../style/homeStyle.css">
     <link rel="stylesheet" href="../responsive/homeResponsive.css">
@@ -28,12 +31,8 @@
                                 <img src="../assets/img/header/navbar-brand.png" alt="brand">
                             </a>
                         </div>
-                        
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapes navbar-collapes d-flex col-8 justify-content-between align-items-center row" id="navbarContent">
-                            <ul class="navbar-nav mb-lg-0 links col-8 ">
+                        <div class="col-lg-8 col-md-9 justify-content-between align-items-center row" id="navbarContent">
+                            <ul class="navbar-nav mb-lg-0 links col-8 col-md-7 col-sm-6">
                                 <li class="nav-item">
                                     <a href="" class="nav-link active" aria-colcount="page">خانه</a>
                                 </li>
@@ -44,7 +43,7 @@
                                     <a href="" class="nav-link active" aria-colcount="page">تماس با ما</a>
                                 </li>
                             </ul>
-                            <ul class="navbar-nav mb-lg-0 buttons col-4 justify-content-end">    
+                            <ul class="navbar-nav mb-lg-0 buttons col-4 col-md-5 col-sm-4 justify-content-end">    
                                 <li class="nav-item ms-3">
                                     <a href="Login.html" class="btn" aria-colcount="page">ورود</a>
                                 </li>
@@ -52,6 +51,35 @@
                                     <a href="" class="btn" aria-colcount="page">عضویت</a>
                                 </li>
                             </ul>
+                        </div>
+                        
+                        <div class="navbar-responsive col-sm justify-content-end row">
+                            <div class="headerIcon btn col-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <ul class="navbar-nav mb-lg-0 links">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link active" aria-colcount="page">خانه</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link active" aria-colcount="page">خدمات ما</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link active" aria-colcount="page">تماس با ما</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav mb-lg-0 buttons col-4 col-md-5 col-sm-4 justify-content-end">    
+                                    <li class="nav-item ms-5">
+                                        <a href="Login.html" class="btn" aria-colcount="page">ورود</a>
+                                    </li>
+                                    <li class="nav-item ms-5">
+                                        <a href="" class="btn" aria-colcount="page">عضویت</a>
+                                    </li>
+                                </ul>
+                            </div>      
                         </div>
                 </nav>
             </section>
@@ -81,44 +109,48 @@
         <section class="row">
             <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-around align-items-baseline">
+                          <h5 class="card-title">متن ساختگی</h5>
                         <i class="bi bi-x-diamond"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">متن ساختگی</h5>
+                        
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-around align-items-baseline">
+                          <h5 class="card-title">متن ساختگی</h5>
                         <i class="bi bi-journal-medical"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">متن ساختگی</h5>
+                        
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-around align-items-baseline">
+                          <h5 class="card-title">متن ساختگی</h5>
                         <i class="bi bi-speedometer2"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">متن ساختگی</h5>
+                        
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 plr-2 col-md-5 col-md-3 col-lg-3">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-around align-items-baseline">
+                          <h5 class="card-title">متن ساختگی</h5>
                         <i class="bi bi-globe"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">متن ساختگی</h5>
+                        
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     </div>
                 </div>
@@ -126,14 +158,14 @@
         </section>
     </section>
 
-    <section class="about-page mt-5">
+    <section class="about-page mt-5 mb-5">
         <section class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="about-information col-lg-5">
+            <div class="row justify-content-between ">
+                <div class="about-information col-lg-5 col-md-6 col-sm-6">
                     <div class="about-title">
                         <h3>ایجاد و توسعه وبلاگ شخصی</h3>
                     </div>
-                    <div class="about-title">
+                    <div class="about-text">
                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. </p>
                     </div>
                     <div class="about-link d-flex align-items-center">
@@ -141,7 +173,7 @@
                         <a href="" class="btn" aria-colcount="page">عضویت</a>
                     </div>
                 </div>
-                <div class="about-img col-lg-5">
+                <div class="about-img col-lg-6 col-md-6 col-sm-6">
                     <img src="../assets/img/about/about-img.png" alt="about">
                 </div>
             </div>

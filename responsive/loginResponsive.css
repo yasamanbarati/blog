@@ -1,0 +1,29 @@
+@media only screen and (max-width:500px){
+    section.background-img {
+        position: absolute;
+        height: 560px;
+    }
+    .login-box1{
+        width: 80%;
+    }
+    .login-box2{
+        width: 65%;
+    }
+    .login{
+        top: 90px;
+    }
+}
+@media only screen and (max-width:300px){
+    .login {
+        height: 340px;
+    }
+    .form-group label {
+        font-size: 13px;
+    }
+    .form-group input{
+        font-weight: 500;
+    }
+    .social-links a {
+        font-size: 20px;
+    }
+}

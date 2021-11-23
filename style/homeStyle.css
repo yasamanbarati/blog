@@ -11,6 +11,43 @@ body{
 header{
     position: relative;
 }
+.navbar-responsive{
+    display: none;
+}
+.navbar-responsive .headerIcon {
+    display: block;
+    cursor: pointer;
+}
+.line1, .line2, .line3 {
+    height: 6px;
+    width: 50px;
+    margin-top: 4px;
+    background-color: var(--scound-color);
+    border-radius: 5px;
+}
+.navbar-responsive .collapse .navbar-nav {
+    justify-content: center;
+    align-items: baseline;
+    background-color: #0a162de6;
+    border-radius: 10px;
+}
+div#collapseExample {
+    padding: 0;
+    background-color: var(--first-color);
+}
+.navbar-nav.buttons .nav-item:last-child {
+    margin: 20px 0px;
+}
+.collapse .navbar-nav{
+    display: inline-block;
+    z-index: 100;
+    width: 100%;
+}
+.navbar-nav .nav-item {
+    position: relative;
+    margin: 0 10px;
+    word-wrap: break-word;
+}
 .navbar-brand a,
 .navbar-brand{
     width: 180px;
@@ -21,6 +58,7 @@ header{
     height: 100%;
 }
 div#navbarContent {
+    display: flex;
     height: 80px;
 }
 .navbar-nav.links .nav-item{
@@ -47,8 +85,12 @@ div#navbarContent {
 .navbar-nav.buttons .nav-item a{
     padding-bottom: 5px;
 }
+.navbar-nav.buttons .nav-item{
+    height: 100%;
+}
 .navbar-nav.buttons .nav-item:first-child{
     border: 1.7px var(--third-color) solid;
+    margin-top: 20px;
 }
 .navbar-nav.buttons .nav-item:last-child{
     background-color: var(--third-color);
@@ -178,7 +220,7 @@ div#navbarContent {
     height: 100%;
 }
 .about-page .container .row{
-    padding: 15px;
+    padding: 5px;
 }
 .about-title h3{
     display: inline-block;
@@ -186,7 +228,7 @@ div#navbarContent {
     font-weight: 800;
     color: var(--first-color);
 }
-.about-title p{
+.about-text p{
     display: inline-block;
     font-size: 15px;
     font-weight: 500;
